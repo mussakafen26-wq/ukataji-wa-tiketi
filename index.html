@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ratiba ya Usafiri & Tiketi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1cb10e;
+        }
+        h1 {
+            color: rgb(7, 7, 194);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        
+        }
+        th, td {
+            padding: 10px; border: 1px solid #ccc;
+            text-align: center;
+        }
+        th {
+            background-color: #004080;
+            color: white;
+        }
+        form {
+            background: rgb(64, 5, 131);
+            padding: 20px;
+            border-radius: 8px;
+            max-width:40%;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #aaa;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #002050;
+        }
+        #confirmation {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Ratiba ya Usafiri</h1>
+
+<table>
+    <head>
+        <r>
+            <th>Kusafiri Kutoka</th>
+            <th>Kwenda</th>
+            <th>Muda wa Kuondoka</th>
+            <th>Bei (TZS)</th>
+        </r>
+    </head>
+    <body>
+        <tr><td>Dar es salaam</td><td>Mwanza</td> <td>08:00 AM </td><td>30 000</td></tr>
+        <tr><td>Dar es Salaam</td><td>Arusha</td><td>09:00 AM</td><td>25,000</td></tr>
+        <tr><td>Dodoma</td><td>Mbeya</td><td>10:00 AM</td><td>40,000</td></tr>
+    </body>
+</table>
+
+<h2>Nunua Tiketi</h2>
+
+<form id="ticketForm">
+    <label for="from">Kutoka:</label>
+    <select id="from" required>
+        <option >Chagua mji</option>
+        <option >Dar es Salaam</option>
+        <option >Dodoma</option>
+    </select>
+
+    <label for="to">Kwenda:</label>
+    <select id="to" required>
+        <option value="">Chagua mji</option>
+        <option value="">Mwanza</option>
+        <option value="Arusha">Arusha</option>
+        <option value="Mbeya">Mbeya</option>
+    </select>
+
+    <label for="date">Tarehe ya Safari:</label>
+    <input type="date" />
+
+    <label for="name">Jina la Mnunuzi:</label>
+    <input type="text" id="name" placeholder="Jina lako kamili" required />
+
+    <button type>Nunua Tiketi</button>
+</form>
+
+ 
+
+ 
