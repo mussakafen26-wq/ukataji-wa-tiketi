@@ -1,1 +1,0 @@
-# ukataji-wa-tiketi
